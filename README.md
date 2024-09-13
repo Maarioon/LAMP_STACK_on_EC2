@@ -39,7 +39,7 @@ ssh -i /path/to/your-key.pem ec2-user@your-ec2-instance-public-ip
 chmod 400 my-ec2-key.pem
 ```
 ```
-ssh -i "my-ec2-key.pem" ubuntu@184.72.210.143
+ssh -i "my-ec2-key.pem" ubuntu@54.224.231.184
 ```
 Where username=ubuntu and public ip address=54.224.231.184
 
@@ -75,7 +75,7 @@ curl http://youripaddress
 ```
 __5.__ __Test with the public IP address if the Apache HTTP server can respond to request from the internet using the url on a browser.__
 ```
-http://184.72.210.143:80
+http://54.224.231.184:80
 ```
 ![image alt](https://github.com/Maarioon/LAMP_STACK_on_EC2/blob/d1db258ffbde598b4d1ec116191fa976bc8a4bd0/apche_install.png)
 ![image alt](https://github.com/Maarioon/LAMP_STACK_on_EC2/blob/d1db258ffbde598b4d1ec116191fa976bc8a4bd0/apache.png)
@@ -190,7 +190,7 @@ sudo systemctl reload apache2
 ![image alt](https://github.com/Maarioon/LAMP_STACK_on_EC2/blob/4f2ace6df2ca33e0e45e7db9e8ecc3a8b831b22e/Screenshot%202024-09-12%20114956.png)
 __8.__ __The new website is now active but the web root /var/www/projectlamp is still empty. Create an index.html file in this location so to test the virtual host work as expected.__
 ```
-sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html
+sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://54.224.231.184/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html
 ```
 ## Step 5 - Enable PHP on the website
 after going through all tose steps, you can now enable the website
