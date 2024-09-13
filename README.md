@@ -7,10 +7,10 @@ The LAMP stack is a collection of open-source software used to build web applica
 
 **Each component in the LAMP stack plays a critical role:**
 
-![Static Badge](https://img.shields.io/badge/Linux-red) : The operating system that underpins everything. It's reliable, scalable, and commonly used for web hosting.
-![Static Badge](https://img.shields.io/badge/Apache-blue) : A widely-used web server software that handles HTTP requests and serves your website to users.
-![Static Badge](https://img.shields.io/badge/MySQL-purple) : A relational database management system (RDBMS) used to store and manage data in a structured way.
-![Static Badge](https://img.shields.io/badge/PHP-black) : A server-side scripting language used to create dynamic web content by interacting with the database.
+![Static Badge](https://img.shields.io/badge/Linux-red)  Linux: The operating system that underpins everything. It's reliable, scalable, and commonly used for web hosting.
+![Static Badge](https://img.shields.io/badge/Apache-blue) Apache: A widely-used web server software that handles HTTP requests and serves your website to users.
+![Static Badge](https://img.shields.io/badge/MySQL-purple) Mysql: A relational database management system (RDBMS) used to store and manage data in a structured way.
+![Static Badge](https://img.shields.io/badge/PHP-black) PHP: A server-side scripting language used to create dynamic web content by interacting with the database.
 Together, these technologies create a powerful platform for developing dynamic websites and applications.
 
 Prerequisites
